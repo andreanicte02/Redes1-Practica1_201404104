@@ -8,20 +8,20 @@
 
 
 
-![](Captura de pantalla (128).png)
+![c2](c2.png)
 
 
 
-# Configuracion 
+# Configuración 
 
-Para la siguiente topologica se utlizaron:
+Para la siguiente topológica se utilizaron:
 
 - 1 router
 - 2 switch
 - 3 vpc
 - 1 virutal linux
 
-## Configuracion del router
+## Configuración del router
 
 Comandos para la configuracion de la primera interfaz f0/0
 
@@ -99,23 +99,23 @@ PC1
 
 
 
-## Configuracion maquina virutal
+## Configuración maquina virtual
 
-![ubuntu1 - VMware Workstation 18_8_2020 23_08_27](ubuntu1 - VMware Workstation 18_8_2020 23_08_27.png)
+![c1](c1.png)
 
 
 
 # Glosario
 
-| Palabras      | Definicion                                                   |
+| Palabras      | Definición                                                   |
 | ------------- | ------------------------------------------------------------ |
-| Direccion MAC | Identificador unico que cada fabricante, le asigna a la tarjeta de red de sus dispositivos conectados |
-| IP            | Identifica de manera logica y jerárquica de una intefaz en la red |
-| Getaway       | Comunmente equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior, generalmente realizando para ello operaciones de traducción de direcciones IP (NAT: Network Address Translation) |
+| Dirección MAC | Identificador único que cada fabricante, le asigna a la tarjeta de red de sus dispositivos conectados |
+| IP            | Identifica de manera lógica y jerárquica de una interfaz en la red |
+| Gateway       | Comúnmente equipo informático configurado para dotar a las máquinas de una red local (LAN) conectadas a él de un acceso hacia una red exterior, generalmente realizando para ello operaciones de traducción de direcciones IP (NAT: Network Adres Translación) |
 | LAN           | Denomina redes con extensión física limitada                 |
 | NAT           | La traducción de dirección de red o NAT se refiere a un proceso específico que implica la reordenación de una única dirección IP en otra dirección IP, a menudo pública, mediante la alteración de la información de red y la información de dirección que se encuentra en la cabecera IP de los paquetes de datos. |
 | Router        | Dispositivo dedicado a la tarea de administrar el tráfico de información que circula por una red de computadoras. |
-| Switch        | Su funcion es la de unir o conectar dispositivos en red. Es importante tener claro que un switch NO proporciona por si solo conectividad con otras redes, y obviamente, TAMPOCO proporciona conectividad con Internet. |
+| Switch        | Su función es la de unir o conectar dispositivos en red. Es importante tener claro que un switch NO proporciona por si solo conectividad con otras redes, y obviamente, TAMPOCO proporciona conectividad con Internet. |
 | VPC           | Virtual port channel                                         |
 | VLAN          | Virtual LAN, método que permite crear redes que lógicamente son independientes, aunque estas se encuentren dentro de una misma red física. |
 | Bordcast      | Es un mensaje que se transmite a todos los miembros de una red y que no necesita ninguna acción de retroalimentación. |
