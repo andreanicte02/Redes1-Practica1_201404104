@@ -1,11 +1,79 @@
 
 practica 1
 
+------------------------------------
 vpc3
 
-ip 192.168.14.20 255.255.255.0
-ping 192.168.14.254
+ip 192.168.14.30 255.255.255.0
+ping 192.168.14.254	// primera interfaz
 
 ping 192.168.10.254 // la segunda interfaz
-ip 192.168.14.20 255.255.255.0 192.168.14.254
+ip 192.168.14.30 255.255.255.0 192.168.14.254
 show ip
+
+save config.txt
+load config.txt
+-------------------------------------
+vpc2
+ip 192.168.14.15 255.255.255.0
+ping 192.168.14.254	// primera interfaz
+
+ping 192.168.10.254 // la segunda interfaz
+ip 192.168.14.15 255.255.255.0 192.168.14.254
+
+-------------------------------------
+vpc1
+
+ip 192.168.10.15 255.255.255.0
+ping 192.168.10.254	// primera interfaz
+
+ping 192.168.14.254 // la segunda interfaz
+ip 192.168.10.15 255.255.255.0 192.168.10.254
+
+----------------------------------------
+
+router
+
+para configurar la primera interfaz
+
+> $configure terminal
+
+> $interface fastEthernet 0/0
+
+> $ip address 192.168.14.254 255.255.255.0
+
+> $no shtudown
+
+> $exit
+
+para configurar la segunda intefaz
+
+> $configure terminal
+
+> $interface fastEthernet 0/1
+
+> $ip address 192.168.10.254 255.255.255.0
+
+> $no shtudown
+
+> $exit
+
+para configurar la velocidad
+
+> $interface fastEthernet 0/0
+
+> $speed 100
+
+> $duplex full
+
+> $exit
+
+> $interface fastEthernet 0/1
+
+> $speed 100
+
+> $duplex full
+
+> $exit
+
+--------------------------
